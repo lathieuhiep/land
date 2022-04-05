@@ -12,7 +12,6 @@ use Kirki\Field\Select;
 use Kirki\Field\Slider;
 use Kirki\Field\Text;
 use Kirki\Field\Typography;
-use Kirki\Field\URL;
 use Kirki\Panel;
 use Kirki\Section;
 

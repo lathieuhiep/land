@@ -42,6 +42,7 @@ if ( ! function_exists( 'land_setup' ) ):
 		// This theme uses wp_nav_menu() in two locations.
         register_nav_menus(
             array(
+	            'landing'   => esc_html__('Landing Page Menu', 'land'),
                 'primary'   => esc_html__('Primary Menu', 'land'),
                 'footer-menu' => esc_html__('Footer Menu', 'land'),
             )
@@ -65,6 +66,7 @@ require get_parent_theme_file_path( '/includes/theme-add-action.php' );
 // Required: Kirki customizer
 if ( class_exists('Kirki') ) {
     require get_theme_file_path( 'extension/theme-option/customizer.php' );
+	require get_theme_file_path( 'extension/theme-option/customizer-template.php' );
 }
 
 // Required: CMB2

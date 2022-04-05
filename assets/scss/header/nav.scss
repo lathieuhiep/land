@@ -34,7 +34,7 @@
   > ul {
     > li {
       > a {
-        padding: 0 15px;
+        padding: 0 12px;
       }
     }
   }
@@ -123,5 +123,18 @@
     font-family: 'Font Awesome 5 Free', serif;
     font-style: normal;
     font-weight: 900;
+  }
+}
+
+.landing-nav {
+  .site-menu {
+    > ul {
+      > li {
+        > a {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
