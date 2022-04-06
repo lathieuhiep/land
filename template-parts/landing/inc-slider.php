@@ -23,7 +23,7 @@ if ( $slides ) :
 					echo wp_get_attachment_image( $item['image'], 'full' );
 				else:
 				?>
-					<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/slider-default.png' ) ) ?>" alt="<?php esc_attr_e('slides', 'land'); ?>">
+					<img src="<?php echo esc_url( get_theme_file_uri( '/assets/images/slider-default.png' ) ) ?>" width="1920" height="850" alt="<?php esc_attr_e('slides', 'land'); ?>">
 				<?php endif; ?>
 			</div>
 
