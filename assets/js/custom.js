@@ -41,6 +41,9 @@
         }
         /* btn mobile End */
 
+        // slider landing page
+        $( document ).general_owlCarousel_custom( '.slider-page' );
+
         /* Start Gallery Single */
         $( document ).general_owlCarousel_custom( '.site-post-slides' );
         /* End Gallery Single */

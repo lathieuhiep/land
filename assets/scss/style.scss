@@ -20,6 +20,8 @@ Text Domain: land
   ## Information
   ## Nav
 # Page
+# Templates
+  ## Landing Page
 # Sidebar
 # Blog
   ## Single
@@ -57,6 +59,11 @@ Text Domain: land
 # Page
 -----------------------------------------------------------------------------*/
 @import "page";
+
+/**
+# Template
+-----------------------------------------------------------------------------*/
+@import "templates/templates";
 
 /**
 # Sidebar
