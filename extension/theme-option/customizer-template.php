@@ -61,8 +61,8 @@ new Repeater(
 			'image'       => [
 				'type'    => 'image',
 				'label'   => esc_html__( 'Ảnh', 'land' ),
-				'default'  => '',
-				'choices'  => [
+				'default' => '',
+				'choices' => [
 					'save_as' => 'id',
 				],
 			],
@@ -169,7 +169,7 @@ new Repeater(
 			],
 		],
 		'fields'    => [
-			'title'       => [
+			'title' => [
 				'type'    => 'text',
 				'label'   => esc_html__( 'Tiêu đề', 'land' ),
 				'default' => '',
@@ -181,7 +181,7 @@ new Repeater(
 				'default' => '',
 			],
 
-			'checkbox'    => [
+			'checkbox' => [
 				'type'    => 'checkbox',
 				'label'   => esc_html__( 'Mô tả chữ đậm', 'kirki' ),
 				'default' => false,
@@ -227,9 +227,9 @@ new Image(
 
 new Editor(
 	[
-		'settings'    => 'land_opt_landing_page_location_description',
-		'label'       => esc_html__( 'Mô Tả', 'land' ),
-		'section'     => 'land_section_landing_page_location',
-		'default'     => esc_html__('Siêu dự án tổ hợp khách sạn', 'land'),
+		'settings' => 'land_opt_landing_page_location_description',
+		'label'    => esc_html__( 'Mô Tả', 'land' ),
+		'section'  => 'land_section_landing_page_location',
+		'default'  => esc_html__( 'Siêu dự án tổ hợp khách sạn', 'land' ),
 	]
 );
