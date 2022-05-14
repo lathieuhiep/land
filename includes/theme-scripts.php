@@ -29,7 +29,7 @@ function land_register_front_end() {
 	/*
 	* Start font google
 	* */
-    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), null );
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap', array(), null );
 
 	/* Start main Css */
 	wp_enqueue_style( 'land-library', get_theme_file_uri( '/assets/css/library.min.css' ), array(), '' );
