@@ -2,9 +2,22 @@
 $sticky_menu = get_theme_mod( 'land_opt_sticky_menu', 'on' );
 $logo = get_theme_mod( 'land_opt_image_logo', '' );
 $cart = get_theme_mod( 'land_opt_cart_menu', 'show' );
+$style_menu = get_post_meta(get_the_ID(), 'land_cmb_page_style_menu', true);
+
+$class_type_nav = '';
+if ( empty( $style_menu ) ) :
+    $class_type_nav = 'active-sticky-nav';
+else :
+    if ( $style_menu == 'fixed' ) :
+        $class_type_nav = 'fixed-top';
+    else:
+        $class_type_nav = 'position-absolute top-0 start-0 end-0';
+    endif;
+endif;
+
 ?>
 
-<nav id="site-navigation" class="main-navigation<?php echo esc_attr( is_page_template('templates/template-landing.php') ? ' landing-nav' : '' );echo esc_attr( $sticky_menu == 'on' ? ' active-sticky-nav' : '' ); ?>">
+<nav id="site-navigation" class="main-navigation <?php echo esc_attr( $class_type_nav ); ?>">
     <div class="site-navbar navbar-expand-lg">
         <div class="container">
             <div class="site-navigation_warp d-flex justify-content-lg-end">

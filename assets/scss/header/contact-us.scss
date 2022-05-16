@@ -1,22 +1,29 @@
-.contact-us {
-  line-height: 32px;
-  border-bottom: 1px solid #eee;
-
-  span {
-    display: inline-block;
-    padding-left: 7px;
-    padding-right: 12px;
-
-    i.fa {
-      margin-right: 5px;
-    }
+.header-contact {
+  ~ .position-absolute,
+  ~ .fixed-top {
+    margin-top: 33px;
   }
 
-  &__social-network {
-    .social-network-item {
-      margin: 0;
-      width: 30px;
-      text-align: center;
+  .contact-us {
+    line-height: 32px;
+    border-bottom: 1px solid #eee;
+
+    span {
+      display: inline-block;
+      padding-left: 7px;
+      padding-right: 12px;
+
+      i.fa {
+        margin-right: 5px;
+      }
+    }
+
+    &__social-network {
+      .social-network-item {
+        margin: 0;
+        width: 30px;
+        text-align: center;
+      }
     }
   }
 }

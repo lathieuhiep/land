@@ -167,14 +167,23 @@ class land_Elementor_Addon_Testimonial_Slider extends Widget_Base {
     protected function render() {
         $settings = $this->get_settings_for_display();
 
-        $data_settings_owl = [
-            'loop' => ('yes' === $settings['loop']),
-            'nav' => ('yes' === $settings['nav']),
-            'dots' => ('yes' === $settings['dots']),
-            'margin' => $settings['margin_item'],
-            'autoplay' => ('yes' === $settings['autoplay']),
-            'items' => 1
-        ];
+	    $data_settings_owl = [
+		    'loop'       => ( 'yes' === $settings['loop'] ),
+		    'nav'        => ( 'yes' === $settings['nav'] ),
+		    'dots'       => ( 'yes' === $settings['dots'] ),
+		    'margin'     => $settings['margin_item'],
+		    'autoplay'   => ( 'yes' === $settings['autoplay'] ),
+		    'responsive' => [
+			    '0' => array(
+				    'items' => 1
+			    ),
+
+			    '576' => array(
+				    'items'  => 2,
+				    'margin' => 30
+			    ),
+		    ],
+	    ];
     ?>
 
         <div class="element-testimonial-slider">

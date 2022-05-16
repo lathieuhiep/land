@@ -16,6 +16,26 @@
       }
     }
   }
+
+  &.position-absolute,
+  &.fixed-top {
+    box-shadow: none;
+    background: linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent 95%);
+
+    .site-menu {
+      > ul {
+        > li {
+          > a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  &.position-absolute {
+    z-index: 2;
+  }
 }
 
 .site-logo {

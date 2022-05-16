@@ -25,6 +25,8 @@ function land_register_widget_elementor_addon( $widgets_manager ) {
 	require get_parent_theme_file_path( '/extension/elementor-addon/widgets/carousel-images.php' );
 	require get_parent_theme_file_path( '/extension/elementor-addon/widgets/contact-form-7.php' );
 	require get_parent_theme_file_path( '/extension/elementor-addon/widgets/info-box.php' );
+    require get_parent_theme_file_path( '/extension/elementor-addon/widgets/video.php' );
+    require get_parent_theme_file_path( '/extension/elementor-addon/widgets/project-grid.php' );
 
 	// register add on
     $widgets_manager->register( new \land_Elementor_Addon_Slides() );
@@ -35,6 +37,8 @@ function land_register_widget_elementor_addon( $widgets_manager ) {
 	$widgets_manager->register( new \land_Elementor_Addon_Carousel_Images() );
 	$widgets_manager->register( new \land_Elementor_Addon_Contact_Form_7() );
 	$widgets_manager->register( new \land_Elementor_Addon_Info_Box() );
+    $widgets_manager->register( new \Land_Elementor_Addon_Video() );
+    $widgets_manager->register( new \land_Elementor_Addon_Project_Grid() );
 
 }
 add_action( 'elementor/widgets/register', 'land_register_widget_elementor_addon' );

@@ -69,9 +69,26 @@ if ( class_exists('Kirki') ) {
 	require get_theme_file_path( 'extension/theme-option/customizer-template.php' );
 }
 
+// Required: Custom post type
+require get_parent_theme_file_path( 'extension/post-type/project.php' );
+
 // Required: CMB2
 if ( !class_exists('CMB2') ) {
     require get_parent_theme_file_path( '/extension/meta-box/cmb_post.php' );
+    require get_parent_theme_file_path( '/extension/meta-box/cmb_page.php' );
+}
+
+//  Required: Meta Box Framework
+if ( class_exists( 'RW_Meta_Box' ) ) {
+	require get_parent_theme_file_path( '/extension/meta-box/project-options.php' );
+}
+
+if ( ! function_exists( 'rwmb_meta' ) ) {
+
+	function rwmb_meta( $key, $args = '', $post_id = null ): bool {
+		return false;
+	}
+
 }
 
 // Required: Elementor

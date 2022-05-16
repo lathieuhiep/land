@@ -1,0 +1,35 @@
+.element-project-grid {
+  .col {
+    margin-bottom: 24px;
+  }
+
+  .item-post {
+    &__thumbnail {
+      position: relative;
+      margin-bottom: 15px;
+
+      .play {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 36px;
+        right: 20px;
+        top: 20px;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+
+        &:hover {
+          color: $color-primary;
+          border-color: $color-primary;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
