@@ -27,18 +27,22 @@ function land_register_widget_elementor_addon( $widgets_manager ) {
 	require get_parent_theme_file_path( '/extension/elementor-addon/widgets/info-box.php' );
     require get_parent_theme_file_path( '/extension/elementor-addon/widgets/video.php' );
     require get_parent_theme_file_path( '/extension/elementor-addon/widgets/project-grid.php' );
+    require get_parent_theme_file_path( '/extension/elementor-addon/widgets/project-overview.php' );
+    require get_parent_theme_file_path( '/extension/elementor-addon/widgets/product-tabs.php' );
 
 	// register add on
-    $widgets_manager->register( new \land_Elementor_Addon_Slides() );
-	$widgets_manager->register( new \land_Elementor_Addon_About_Text() );
-	$widgets_manager->register( new \land_Elementor_Addon_Post_Carousel() );
-	$widgets_manager->register( new \land_Elementor_Addon_Post_Grid() );
-	$widgets_manager->register( new \land_Elementor_Addon_Testimonial_Slider() );
-	$widgets_manager->register( new \land_Elementor_Addon_Carousel_Images() );
-	$widgets_manager->register( new \land_Elementor_Addon_Contact_Form_7() );
-	$widgets_manager->register( new \land_Elementor_Addon_Info_Box() );
+    $widgets_manager->register( new \Land_Elementor_Addon_Slides() );
+	$widgets_manager->register( new \Land_Elementor_Addon_About_Text() );
+	$widgets_manager->register( new \Land_Elementor_Addon_Post_Carousel() );
+	$widgets_manager->register( new \Land_Elementor_Addon_Post_Grid() );
+	$widgets_manager->register( new \Land_Elementor_Addon_Testimonial_Slider() );
+	$widgets_manager->register( new \Land_Elementor_Addon_Carousel_Images() );
+	$widgets_manager->register( new \Land_Elementor_Addon_Contact_Form_7() );
+	$widgets_manager->register( new \Land_Elementor_Addon_Info_Box() );
     $widgets_manager->register( new \Land_Elementor_Addon_Video() );
-    $widgets_manager->register( new \land_Elementor_Addon_Project_Grid() );
+    $widgets_manager->register( new \Land_Elementor_Addon_Project_Grid() );
+    $widgets_manager->register( new \Land_Elementor_Project_Overview() );
+    $widgets_manager->register( new \Land_Elementor_Addon_Product_Tabs() );
 
 }
 add_action( 'elementor/widgets/register', 'land_register_widget_elementor_addon' );

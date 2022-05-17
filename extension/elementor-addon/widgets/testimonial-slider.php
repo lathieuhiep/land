@@ -7,7 +7,7 @@ use Elementor\Controls_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class land_Elementor_Addon_Testimonial_Slider extends Widget_Base {
+class Land_Elementor_Addon_Testimonial_Slider extends Widget_Base {
 
     public function get_categories() {
         return array( 'mytheme' );

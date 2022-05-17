@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-class land_Elementor_Addon_About_Text extends Widget_Base {
+class Land_Elementor_Addon_About_Text extends Widget_Base {
 
     public function get_categories() {
         return array( 'mytheme' );

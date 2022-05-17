@@ -1,9 +1,5 @@
 <?php
 
-use Elementor\Group_Control_Image_Size;
-use Elementor\Group_Control_Typography;
-use Elementor\Icons_Manager;
-use Elementor\Utils;
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
 
