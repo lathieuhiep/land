@@ -41,6 +41,15 @@ class Land_Elementor_Addon_Product_Tabs extends Widget_Base {
 		$repeater = new Repeater();
 
 		$repeater->add_control(
+			'list_title', [
+				'label' => esc_html__( 'Title', 'land' ),
+				'type' => Controls_Manager::TEXT,
+				'default' => esc_html__( 'List Title' , 'land' ),
+				'label_block' => true,
+			]
+		);
+
+		$repeater->add_control(
 			'list_image',
 			[
 				'label' => esc_html__( 'Choose Image', 'land' ),
@@ -48,15 +57,6 @@ class Land_Elementor_Addon_Product_Tabs extends Widget_Base {
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
 				],
-			]
-		);
-
-		$repeater->add_control(
-			'list_title', [
-				'label' => esc_html__( 'Title', 'land' ),
-				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'List Title' , 'land' ),
-				'label_block' => true,
 			]
 		);
 
@@ -116,7 +116,7 @@ class Land_Elementor_Addon_Product_Tabs extends Widget_Base {
 			<div class="tab-content">
 				<?php foreach ( $list as $key => $item ): ?>
 					<div class="tab-pane fade <?php echo esc_attr( $key == 0 ? 'show active' : '' ); ?>" id="tab-<?php echo esc_attr($item['_id']); ?>">
-						<div class="row row-cols-2">
+						<div class="row row-cols-1 row-cols-sm-2">
                             <div class="col">
                                 <div class="thumbnail">
 		                            <?php echo wp_get_attachment_image( $item['list_image']['id'], 'full' ); ?>

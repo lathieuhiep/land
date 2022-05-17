@@ -17,7 +17,7 @@ if( is_active_sidebar( 'land-sidebar-footer-column-1' ) || is_active_sidebar( 'l
                     if( is_active_sidebar( 'land-sidebar-footer-column-'.$j ) ):
                 ?>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-<?php echo esc_attr( $land_col ); ?>">
+                    <div class="col-12 col-sm-6 col-lg-<?php echo esc_attr( $land_col ); ?>">
 
                         <?php dynamic_sidebar( 'land-sidebar-footer-column-'.$j ); ?>
 

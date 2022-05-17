@@ -43,8 +43,7 @@ if ( ! function_exists( 'land_setup' ) ):
         register_nav_menus(
             array(
 	            'landing'   => esc_html__('Landing Page Menu', 'land'),
-                'primary'   => esc_html__('Primary Menu', 'land'),
-                'footer-menu' => esc_html__('Footer Menu', 'land'),
+                'primary'   => esc_html__('Primary Menu', 'land')
             )
         );
 

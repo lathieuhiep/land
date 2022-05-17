@@ -3,23 +3,32 @@
   @include flexbox();
   @include flex-direction(column);
 
-  .site-post-content {
-    padding: 25px 15px 15px;
-    border: 1px solid #eee;
-    @include flex(1 auto);
-  }
-
   .site-post-image {
     margin-bottom: 10px;
   }
 }
 
+.site-post-content {
+  .post-item {
+    padding: 15px;
+    border: 1px solid #eee;
+
+    .text-read-more {
+      color: $color-hover;
+
+      &:hover {
+        color: $color-second;
+      }
+    }
+  }
+}
+
 .site-post-title {
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 18px;
 
   a {
-    color: $color-title;
+    color: $color-primary;
 
     i {
       margin-right: 5px;

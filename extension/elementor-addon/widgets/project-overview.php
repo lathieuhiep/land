@@ -143,8 +143,8 @@ class Land_Elementor_Project_Overview extends Widget_Base {
 			</h2>
 			<?php endif; ?>
 
-			<div class="info row row-cols-2">
-				<div class="col info__left">
+			<div class="info row row-cols-1 row-cols-md-2">
+				<div class="col info__left mb-4 mb-md-0">
                     <?php if ( $gallery ) : ?>
                         <ul class="project-gallery">
                             <?php

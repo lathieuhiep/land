@@ -129,6 +129,12 @@
           visibility: visible;
         }
       }
+
+      &.current-menu-item {
+        > a {
+          color: $color-hover;
+        }
+      }
     }
   }
 }

@@ -24,12 +24,7 @@
                 slideMargin: 0,
                 enableDrag: true,
                 currentPagerPosition:'left',
-                controls: false,
-                onSliderLoad: function(el) {
-                    el.lightGallery({
-                        selector: selector
-                    });
-                }
+                controls: false
             });
         } )
     };

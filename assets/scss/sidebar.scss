@@ -83,6 +83,7 @@ section {
 
         .search-submit {
           margin-left: 10px;
+          @include flex(0 0 auto);
         }
       }
     }
@@ -201,6 +202,7 @@ section {
 
         .item-title {
           font-size: 14px;
+          font-weight: 400;
           margin-bottom: 10px;
           overflow: hidden;
         }

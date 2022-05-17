@@ -14,14 +14,12 @@ class land_recent_post_widget extends WP_Widget {
      */
 
     public function __construct() {
-
         $widget_ops = array(
             'classname'     =>  'land_recent_post_widget',
             'description'   =>  esc_html__( 'A widget show post', 'land' ),
         );
 
         parent::__construct( 'land_recent_post_widget', 'Basic Theme: Recent Post', $widget_ops );
-
     }
 
     /**
@@ -93,11 +91,6 @@ class land_recent_post_widget extends WP_Widget {
                                     <?php the_title(); ?>
                                 </a>
                             </h4>
-
-                            <p class="item-meta">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                <?php echo get_the_date(); ?>
-                            </p>
                         </div>
                     </div>
 

@@ -4,14 +4,15 @@ $logo = get_theme_mod( 'land_opt_image_logo', '' );
 $cart = get_theme_mod( 'land_opt_cart_menu', 'show' );
 $style_menu = get_post_meta(get_the_ID(), 'land_cmb_page_style_menu', true);
 
-$class_type_nav = '';
-if ( empty( $style_menu ) ) :
+if ( empty( $style_menu ) && $sticky_menu == 'on' ) :
     $class_type_nav = 'active-sticky-nav';
 else :
     if ( $style_menu == 'fixed' ) :
         $class_type_nav = 'fixed-top';
-    else:
+    elseif ( $style_menu == 'absolute' ):
         $class_type_nav = 'position-absolute top-0 start-0 end-0';
+    else:
+	    $class_type_nav = '';
     endif;
 endif;
 

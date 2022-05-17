@@ -6,13 +6,19 @@
   }
 
   &__column {
-    border-top: 1px solid $border-color;
     padding: 30px 0;
+    color: #f1f1f1;
+    background-color: #0a3643;
+
+    a {
+      color: #f1f1f1;
+    }
   }
 
   &__bottom {
-    border-top: 1px solid $border-color;
     padding: 10px 0;
+    color: rgba(255,255,255,0.5);
+    background-color: #000000;
 
     .bottom-warp {
       display: grid;

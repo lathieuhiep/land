@@ -11,12 +11,16 @@ $class_col_content = land_col_use_sidebar($sidebar, 'land-sidebar-main');
             <div class="<?php echo esc_attr( $class_col_content ); ?>">
                 <div class="site-post-content">
                     <?php if ( have_posts() ) : ?>
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-<?php echo esc_attr( $per_row ); ?>">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-<?php echo esc_attr( $per_row ); ?>">
 
                             <?php while ( have_posts() ) : the_post(); ?>
 
-                                <div id="post-<?php the_ID(); ?>" class="col site-post-item">
-                                    <div class="site-post-content">
+                                <div id="post-<?php the_ID(); ?>" class="col">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail mb-4">
+                                            <?php the_post_thumbnail('large'); ?>
+                                        </div>
+
                                         <h2 class="site-post-title">
                                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                                 <?php if (is_sticky() && is_home()) : ?>
@@ -28,12 +32,6 @@ $class_col_content = land_col_use_sidebar($sidebar, 'land-sidebar-main');
                                                 ?>
                                             </a>
                                         </h2>
-
-                                        <?php
-                                        get_template_part('template-parts/post/content', 'image');
-
-                                        land_post_meta();
-                                        ?>
 
                                         <div class="site-post-excerpt">
                                             <p>
@@ -47,7 +45,7 @@ $class_col_content = land_col_use_sidebar($sidebar, 'land-sidebar-main');
                                             </p>
 
                                             <a href="<?php the_permalink(); ?>" class="text-read-more">
-                                                <?php esc_html_e('Read more', 'land'); ?>
+                                                <?php esc_html_e('Xem thêm', 'land'); ?>
                                             </a>
 
                                             <?php land_link_page(); ?>

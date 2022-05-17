@@ -22,7 +22,7 @@ if (!empty($list_cate)):
 
         <div class="site-single-post-related">
             <h3 class="title">
-                <?php esc_html_e('Related Post', 'land'); ?>
+                <?php esc_html_e('Bài viết liên quan', 'land'); ?>
             </h3>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
