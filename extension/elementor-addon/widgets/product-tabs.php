@@ -103,7 +103,7 @@ class Land_Elementor_Addon_Product_Tabs extends Widget_Base {
 	?>
 
 		<div class="element-product-tabs">
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<ul class="nav nav-tabs">
 				<?php foreach ( $list as $key => $item ): ?>
 					<li class="nav-item" role="presentation">
 						<button class="nav-link <?php echo esc_attr( $key == 0 ? 'active' : '' ); ?>" data-bs-toggle="tab" data-bs-target="#tab-<?php echo esc_attr($item['_id']); ?>" type="button">
@@ -116,7 +116,19 @@ class Land_Elementor_Addon_Product_Tabs extends Widget_Base {
 			<div class="tab-content">
 				<?php foreach ( $list as $key => $item ): ?>
 					<div class="tab-pane fade <?php echo esc_attr( $key == 0 ? 'show active' : '' ); ?>" id="tab-<?php echo esc_attr($item['_id']); ?>">
-						<?php echo esc_html( $item['list_content'] ); ?>
+						<div class="row row-cols-2">
+                            <div class="col">
+                                <div class="thumbnail">
+		                            <?php echo wp_get_attachment_image( $item['list_image']['id'], 'full' ); ?>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="desc">
+	                                <?php echo wp_kses_post( $item['list_content'] ); ?>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 				<?php endforeach; ?>
 			</div>
