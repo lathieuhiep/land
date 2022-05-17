@@ -14,8 +14,6 @@
         const project_gallery = $scope.find( '.project-gallery' );
 
         project_gallery.each( function () {
-            const selector = $(this).find('.lslide');
-
             $(this).lightSlider({
                 gallery: true,
                 item: 1,
