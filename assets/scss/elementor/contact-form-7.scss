@@ -1,0 +1,13 @@
+.element-contact-form-7 {
+  .title {
+    color: $color-title;
+  }
+
+  form {
+    &.wpcf7-form {
+      label {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

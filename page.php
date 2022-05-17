@@ -20,6 +20,5 @@ endif;
         ?>
     </main>
 
-<?php 
-
+<?php
 get_footer();

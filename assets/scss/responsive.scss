@@ -1,8 +1,17 @@
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 1224px;
+  }
+
+}
+
 @media (max-width: 1199px) {
 
   .container {
     max-width: none;
   }
+
   .element-post-carousel {
     .owl-carousel {
       .owl-nav {

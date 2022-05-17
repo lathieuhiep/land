@@ -1,0 +1,31 @@
+.element-project-overview {
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .list-info {
+    border: 1px solid #e9e9e9;
+
+    .item {
+      display: grid;
+      grid-template-columns: 30% auto;
+      border-bottom: 1px solid #e9e9e9;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      strong {
+        border-right: 1px solid #e9e9e9;
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      &__text {
+        padding: 6px 8px;
+      }
+    }
+  }
+}
